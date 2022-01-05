@@ -1,0 +1,371 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>cotizaciones</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0
+.0/css/bootstrap.min.css">
+<link href="css/style_cotizaciones.css" rel="stylesheet" type="text/css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min
+.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/p
+opper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.
+min.js"></script>
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-sm bg-custom navbar-custom"> <a class="navbar-brand" href="index.html"> 
+ <div class="container">
+ <img id="logo-nav" src="images/solemio_logo_navegador.png" alt="Logo Solemío" style="width:124px;"> </a>
+  <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon" img src></span> </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active"> <a class="nav-link" href="index.html">Inicio</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="productos_pasteles_todo.html">Productos</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="empresa.html">Empresa</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="contacto.html">Contacto</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="cotizaciones.html">Cotizaciones</a> </li>
+    </ul>
+  </div>
+	</div>
+</nav>
+
+
+<div id="contenedor" class="container">
+<div class="row">
+
+<div id="formulario_1" class="col-sm-6"> 
+
+ 
+ <form id="form_1">
+  <div class="form-row"><h3>Solicitar producto de la Galería.</h3>
+   <br><br><br>
+    <div class="form-group col-md-6">
+<label for="usr">Nombre</label>
+<input type="text" class="form-control" id="usr" placeholder="Nombre/s" required>
+</div>
+     <div class="form-group col-md-6">
+<label for="usr">Apellido</label>
+<input type="text" class="form-control" id="usr" placeholder="Apellido" required>
+</div>
+    <div class="form-group col-md-6">
+    <label for="exampleFormControlInput1">Correo electrónico</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1 " placeholder="name@example.com" required>
+  </div>
+
+  <div class="form-group col-md-6">
+    <label for="inputNumber">Número de teléfono</label>
+    <input type="number" class="form-control" id="inputNumber" placeholder="Tel." required>
+  </div>
+</div>
+    
+  <div class="form-row">
+   
+    <div class="form-group col-md-12">
+     <label class="mr-sm-2" for="inlineFormCustomSelect">Localidad/Colonia</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+        <option selected>Seleccionar...</option>
+        <option value="1">Tecali de Herrera</option>
+        <option value="2">Tzocuilac</option>
+        <option value="3">La Trinidad</option>
+        <option value="4">Concepción Cuautla</option>
+        <option value="5">Magdalena</option>
+        <option value="6">San Luis</option>
+          <option value="7">Morelos</option>
+          <option value="8">Otro</option>
+      </select>
+      <small id="passwordHelpInline" class="text-muted">
+      En caso de que su residencia sea en otra zona, debe recoger su pedido en sucursal.
+    </small>
+    </div>
+    
+    <div class="form-group col-md-6">
+      <label for="inputNumber2">Día que necesitas el producto</label>
+      <input type="number" class="form-control" id="inputNumber" placeholder="Día del mes" required>
+  </div>
+    
+    <div class="form-group col-md-6">
+     <label class="mr-sm-2" for="inlineFormCustomSelect">Mes</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+        <option selected>Seleccionar...</option>
+        <option value="1">Enero</option>
+        <option value="2">Febrero</option>
+        <option value="3">Marzo</option>
+        <option value="4">Abril</option>
+        <option value="5">Mayo</option>
+        <option value="6">Junio</option>
+        <option value="7">Julio</option>
+        <option value="8">Agosto</option>
+        <option value="9">Septiembre</option>
+        <option value="10">Octubre</option>
+        <option value="11">Noviembre</option>
+        <option value="12">Diciembre</option>
+      </select>
+     
+    </div>
+    <small id="passwordHelpInline" class="text-muted"> Los pasteles y postres completos se deben pedir con 4 días de anticipación.
+    </small>
+   
+   
+   <div id="productos-pedido" class="form-group col-md-12">
+    <h5>Selecciona los productos que deseas</h5>
+    <small id="passwordHelpInline" class="text-muted"> No es necesario llenar todos los campos en este apartado.
+    </small><br><br>
+     
+     <label id="sub-productos" class="mr-sm-2" for="inlineFormCustomSelect">Pasteles</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+        <option selected>Seleccionar...</option>
+        <option value="1">Queso con zarzamora</option>
+        <option value="2">Fresas con crema</option>
+        <option value="3">Moka</option>
+        <option value="4">Chocolate con almendras</option>
+        <option value="5">Selva negra</option>
+        <option value="6">Almendras con frutos rojos</option>
+        <option value="7">Chocolate con avellana</option>
+        <option value="8">Chocolate con fresa</option>
+        <option value="9">Pastel de fondant</option>
+        <option value="10">Pastel de número/s</option>
+        <option value="11">Pastel de letra/s</option>
+      
+      </select>
+      <div id="checkboxoptions">
+      <div class="form-check form-check-inline">
+<label class="form-check-label">
+<input type="checkbox" class="form-check-input" value="">Rebanada
+</label>
+</div>
+<div class="form-check form-check-inline">
+<label class="form-check-label">
+<input type="checkbox" class="form-check-input" value="">Completo
+</label>
+</div>
+	  </div>
+
+      
+      <label id="sub-productos" class="mr-sm-2" for="inlineFormCustomSelect">Postres</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+        <option selected>Seleccionar...</option>
+        <option value="1">Flan cremoso</option>
+        <option value="2">Tarta de nutella</option>
+        <option value="3">Chocoflan</option>
+        <option value="4">Pay de queso</option>
+      
+        
+      </select>
+      
+      <div id="checkboxoptions">
+      <div class="form-check form-check-inline">
+<label class="form-check-label">
+<input type="checkbox" class="form-check-input" value="">Rebanada
+</label>
+</div>
+<div class="form-check form-check-inline">
+<label class="form-check-label">
+<input type="checkbox" class="form-check-input" value="">Completo
+</label>
+</div>
+	  </div>
+      
+      <label id="sub-productos" class="mr-sm-2" for="inlineFormCustomSelect">Cupcakes </label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+        <option selected>Seleccionar...</option>
+        <option value="1">Fresas con crema</option>
+        <option value="2">Red Velvet</option>
+        <option value="3">Cupcake oreo</option>
+        <option value="4">Selva negra</option>
+        <option value="5">Chocolate</option>
+    
+      </select>
+   <div id="nopiezas" class="form-group col-md-6">
+    <input type="number" class="form-control" id="inputNumber" placeholder="Número de piezas">
+  </div>
+      
+      <label id="sub-productos" class="mr-sm-2" for="inlineFormCustomSelect">Tartaletas</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+        <option selected>Seleccionar...</option>
+        <option value="1">Crema pastelera y fruta</option>
+        <option value="2">Chocolate y fresa</option>
+        <option value="3">Nutella</option>
+
+      </select>
+      
+      <div id="nopiezas" class="form-group col-md-6">
+    <input type="number" class="form-control" id="inputNumber" placeholder="Número de piezas">
+  </div>
+       <label id="sub-productos" class="mr-sm-2" for="inlineFormCustomSelect">Bebidas</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+        <option selected>Seleccionar...</option>
+        <option value="1">Crema pastelera y fruta</option>
+        <option value="2">Chocolate y fresa</option>
+        <option value="3">Nutella</option>
+
+      </select>
+      
+   
+    </div>
+  
+</div>
+   <a href="aviso_pedido.html"<button type="submit" class="btn btn-light btn-lg my-1">Enviar pedido</button></a>
+  </div>
+
+<div id="formulario_2" class="col-sm-6"> 
+
+ 
+ <form id="form_2">
+  <div class="form-row"><h3>¿Necesitas algo en especial? </h3>
+  <h5>Con gusto te hacemos una cotización.</h5>
+   <br><br>
+    <div class="form-group col-md-6">
+<label for="usr">Nombre</label>
+<input type="text" class="form-control" id="usr" placeholder="Nombre/s" required>
+</div>
+     <div class="form-group col-md-6">
+<label for="usr">Apellido</label>
+<input type="text" class="form-control" id="usr" placeholder="Apellido" required>
+</div>
+    <div class="form-group col-md-6">
+    <label for="exampleFormControlInput1">Correo electrónico</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1 " placeholder="name@example.com" required>
+  </div>
+
+  <div class="form-group col-md-6">
+    <label for="inputNumber">Número de teléfono</label>
+    <input type="number" class="form-control" id="inputNumber" placeholder="Tel." required>
+  </div>
+    </div>
+    
+  <div class="form-row">
+   
+    <div class="form-group col-md-12">
+     <label class="mr-sm-2" for="inlineFormCustomSelect">Localidad/Colonia</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+        <option selected>Seleccionar...</option>
+        <option value="1">Tecali de Herrera</option>
+        <option value="2">Tzocuilac</option>
+        <option value="3">La Trinidad</option>
+        <option value="4">Concepción Cuautla</option>
+        <option value="5">Magdalena</option>
+        <option value="6">San Luis</option>
+          <option value="7">Morelos</option>
+          <option value="8">Otro</option>
+      </select>
+      <small id="passwordHelpInline" class="text-muted">
+      En caso de que su residencia sea en otra zona, debe recoger su pedido en sucursal.
+    </small>
+    </div>
+    
+    <div class="form-group col-md-6">
+    <label for="inputNumber">Día</label>
+    <input type="number" class="form-control" id="inputNumber" placeholder="Día del mes" required>
+  </div>
+    
+    <div class="form-group col-md-6">
+     <label class="mr-sm-2" for="inlineFormCustomSelect">Mes</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+        <option selected>Seleccionar...</option>
+        <option value="1">Enero</option>
+        <option value="2">Febrero</option>
+        <option value="3">Marzo</option>
+        <option value="4">Abril</option>
+        <option value="5">Mayo</option>
+        <option value="6">Junio</option>
+        <option value="7">Julio</option>
+        <option value="8">Agosto</option>
+        <option value="9">Septiembre</option>
+        <option value="10">Octubre</option>
+        <option value="11">Noviembre</option>
+        <option value="12">Diciembre</option>
+      </select>
+     
+    </div>
+    <small id="passwordHelpInline" class="text-muted"> Los pasteles y postres completos se deben pedir con 4 días de anticipación.
+    </small>
+   
+   
+   <div id="productos-pedido" class="form-group col-md-12"><br>
+    <h5>Cuéntanos tu idea.</h5>
+  
+    
+<div class="form-group">
+    <label for="exampleFormControlTextarea1"></label>
+    <textarea placeholder="Sabores, colores, decoraciones, tamaño, número de pisos, piezas..." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+      
+ <div class="form-group">
+    <label for="exampleFormControlFile1">¿Te inspiraste en una imagen? ¡Envíala!</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+
+      
+   
+    </div>
+  
+</div>
+   <a href="aviso_pedido.html"<button type="submit" class="btn btn-light btn-lg my-1">Enviar pedido</button></a>
+  </div>
+
+</div>
+ 
+  
+  
+  
+  
+</form>
+
+ 
+ 
+ 
+  </div>
+
+
+
+	</div>
+	</div>
+</body>
+
+<footer>
+	<div id="footer" class="container-fluid py-5">
+  <div class="row">
+    
+ <div id="contenedor" class="container">
+<div class="row">
+<div id="columna1" class="style_fotter" clas="col-6 col-md">
+  	
+  	<ul>
+    <h2>Solemío</h2>
+    <li><a href="#empresa.html">Nuestra empresa</a></li>
+    <li><a href="#cotizaciones.html">Solicitar pedido</a></li>
+	  </ul>
+  </div>
+  <div id="columna2" class="style_fotter" class="col-3 col-md">
+ 
+<ul>
+    <h2>Contáctanos</h2>
+    <li><a href="https://api.whatsapp.com/send?phone=522241163929">Tel. 224 116 3929</a></li>
+     <li><a href="mailto:solemio_rep@hotmail.com?subject=Email%20Subject">solemio_rep@hotmail.com</a></li>
+</ul>
+</div>
+<div id="columna3" class="style_fotter" class="col-3 col-md">
+  <ul>
+<ul>
+    <h2>Síguenos</h2>
+	  </ul>
+	  <a href="https://www.facebook.com/solemiorep"><img id="icono-facebook"src="images/icono_facebook.png" alt=""></a>
+	  <a href="https://www.instagram.com/solemio_rep/?hl=es"><img id="icono-instagram" src="images/icono_instagram.png" alt=""></a>
+	      </div>
+	  </div>
+	  </div>
+	  </div>
+	</div>
+</footer>
+
+</html>
